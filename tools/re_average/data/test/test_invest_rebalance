@@ -1,0 +1,5 @@
+ path: ~/autodl-tmp/code/invest_agent/Qwen-Agent/invest_agent/tools/re_average
+
+ env: industry_brain
+
+ Instruction: python investment_rebalance.py --gold 159562.XSHE --bond 511270.XSHG

@@ -3,8 +3,6 @@
 
 ~/Qwen-Agent/invest_agent/tools/re_average
 
-
-
 ---
 ## 目录结构
 ```bash

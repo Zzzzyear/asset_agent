@@ -1,4 +1,33 @@
-这是一个进行资产配置的Qwen-Agent的再平衡策略回测工具。包含以下功能：
+## 注意 ##
+项目是一个Qwen-Agent的tool，若要运行需注意目录：
+
+~/Qwen-Agent/invest_agent/tools/re_average
+
+
+
+---
+## 目录结构
+```bash
+~/Qwen-Agent/re_average/
+├── data/               # 市场数据存储
+│   ├── gold_close.csv
+│   ├── bond_close.csv
+│   └── ...其他资产数据
+├── utils/              # 工具模块
+│   ├── data_jq_api.py          # 数据获取接口
+│   └── asset_empyrical_set.py  # 风险指标计算
+├── res/                 # 结果输出
+│   ├── final_report.png
+│   └── report.json
+├── test/              # 测试模块 ~/re_average下运行
+│   ├── test_investment_reaverage.py         # 测试 
+│   └── text                                 # 可编辑文本，暂存信息
+├── investment_rebalance.py      # 主程序 ~/Qwen-Agent下运行
+└── investment_rebalance_bp.py   # 主程序backup
+
+
+```
+
 ## **1. 数据获取 (`utils/data_jq_api.py`)**
 - 通过 **聚宽 API** (`get_price()`) 获取资产的历史数据，包括：
   - **黄金 (`gold`)**
@@ -50,7 +79,7 @@
 ---
 
 ## **总结**
-我们的代码主要是 **一个资产配置策略回测框架**，它包含：
+**一个资产配置策略回测框架**，它包含：
 1. **数据获取**（从聚宽 API 获取历史数据）
 2. **资产再平衡策略**（模拟黄金 & 债券投资）
 3. **风险指标计算**（夏普比率、最大回撤等）

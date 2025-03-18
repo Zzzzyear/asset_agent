@@ -1,5 +1,5 @@
 ## 注意 ##
-项目是一个Qwen-Agent的tool，若要运行需注意目录：
+代码为Qwen-Agent的tool——“re_average”，运行需注意目录：
 
 ~/Qwen-Agent/invest_agent/tools/re_average
 

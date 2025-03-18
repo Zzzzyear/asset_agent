@@ -1,0 +1,13 @@
+ path:
+    ~/autodl-tmp/code/invest_agent/Qwen-Agent
+
+ env:
+    industry_brain
+
+ Instruction:
+    # start_date默认为2022-01-01， rebalance_ratio默认25:25:50
+    python -m invest_agent.tools.re_average.investment_reaverage --gold 159562.XSHE --bond 511270.XSHG --recommended
+    python -m invest_agent.tools.re_average.investment_reaverage --gold 159562.XSHE --bond 511270.XSHG  --stock 000001.XSHE
+
+
+

@@ -4,7 +4,7 @@ import pandas as pd
 from datetime import datetime
 
 # 认证信息
-user, pwd = '18610934225', 'Pingan112'
+user, pwd = 'user', 'pwd'
 jq.auth(user, pwd)
 
 # 路径配置
